@@ -1,0 +1,17 @@
+{
+    "_links" : {
+        "http://webuml.com/rel/git-import" : {
+            "href" : "${baseUri}/importer/git",
+            "methods" : ["POST"]
+        },
+        "metrics" : {
+            "href" : "${baseUri}/metrics"
+        },
+        "env" : {
+            "href" : "${baseUri}/env"
+        },
+        "health" : {
+            "href" : "${baseUri}/health"
+        }
+    }
+}
