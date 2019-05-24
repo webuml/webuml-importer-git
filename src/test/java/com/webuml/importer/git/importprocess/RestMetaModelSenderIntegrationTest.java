@@ -10,8 +10,7 @@ import com.webuml.importer.domain.primitives.ElementId;
 import com.webuml.importer.domain.primitives.ProjectId;
 import com.webuml.importer.domain.projectmodel.Project;
 import com.webuml.importer.projectmanagerclient.ProjectManagerHypermediaDocument;
-import org.springframework.boot.test.IntegrationTest;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.BeforeMethod;
@@ -23,8 +22,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 
-@SpringApplicationConfiguration(classes = Application.class)
-@IntegrationTest
+@SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles(profiles = "local")
 public class RestMetaModelSenderIntegrationTest extends AbstractTestNGSpringContextTests {
 
