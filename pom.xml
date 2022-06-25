@@ -15,7 +15,7 @@
 
   <properties>
     <version.spring>4.3.20.RELEASE</version.spring>
-    <version.spring.data.mongo>1.10.22.RELEASE</version.spring.data.mongo>
+    <version.spring.data.mongo>3.3.5</version.spring.data.mongo>
     <version.spring.hateoas>0.25.1.RELEASE</version.spring.hateoas>
     <halbuilder.version>3.1.3</halbuilder.version>
   </properties>
